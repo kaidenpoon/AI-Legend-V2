@@ -13,6 +13,13 @@
 		ED446ACF299627520056C3AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED446ACE299627520056C3AC /* Preview Assets.xcassets */; };
 		ED446AD7299629620056C3AC /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = ED446AD6299629620056C3AC /* GoogleMobileAds */; };
 		ED446ADA29962AB30056C3AC /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446AD929962AB30056C3AC /* BannerAd.swift */; };
+		ED446ADE299632180056C3AC /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446ADD299632180056C3AC /* SplashScreenView.swift */; };
+		ED446AE0299632400056C3AC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446ADF299632400056C3AC /* Home.swift */; };
+		ED446AE22996327B0056C3AC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446AE12996327B0056C3AC /* ActivityIndicator.swift */; };
+		ED446AE4299632E60056C3AC /* OpenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446AE3299632E60056C3AC /* OpenVM.swift */; };
+		ED446AE7299633100056C3AC /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED446AE6299633100056C3AC /* OpenAIKit */; };
+		ED446AE9299633700056C3AC /* CustomAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446AE8299633700056C3AC /* CustomAlbum.swift */; };
+		ED446AEB299633850056C3AC /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED446AEA299633850056C3AC /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,12 @@
 		ED446ACE299627520056C3AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED446AD829962A180056C3AC /* AI-Legend-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AI-Legend-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ED446AD929962AB30056C3AC /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		ED446ADD299632180056C3AC /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		ED446ADF299632400056C3AC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		ED446AE12996327B0056C3AC /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		ED446AE3299632E60056C3AC /* OpenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenVM.swift; sourceTree = "<group>"; };
+		ED446AE8299633700056C3AC /* CustomAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlbum.swift; sourceTree = "<group>"; };
+		ED446AEA299633850056C3AC /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED446AD7299629620056C3AC /* GoogleMobileAds in Frameworks */,
+				ED446AE7299633100056C3AC /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +70,16 @@
 		ED446AC6299627500056C3AC /* AI Legend */ = {
 			isa = PBXGroup;
 			children = (
+				ED446ADC299631E20056C3AC /* ViewModel */,
+				ED446ADB299631DC0056C3AC /* View */,
 				ED446AD829962A180056C3AC /* AI-Legend-Info.plist */,
 				ED446AC7299627500056C3AC /* AI_LegendApp.swift */,
-				ED446AD929962AB30056C3AC /* BannerAd.swift */,
 				ED446AC9299627500056C3AC /* ContentView.swift */,
 				ED446ACB299627520056C3AC /* Assets.xcassets */,
 				ED446ACD299627520056C3AC /* Preview Content */,
+				ED446AE12996327B0056C3AC /* ActivityIndicator.swift */,
+				ED446AE8299633700056C3AC /* CustomAlbum.swift */,
+				ED446AEA299633850056C3AC /* Error.swift */,
 			);
 			path = "AI Legend";
 			sourceTree = "<group>";
@@ -72,6 +90,24 @@
 				ED446ACE299627520056C3AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED446ADB299631DC0056C3AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED446AD929962AB30056C3AC /* BannerAd.swift */,
+				ED446ADD299632180056C3AC /* SplashScreenView.swift */,
+				ED446ADF299632400056C3AC /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED446ADC299631E20056C3AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED446AE3299632E60056C3AC /* OpenVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +128,7 @@
 			name = "AI Legend";
 			packageProductDependencies = (
 				ED446AD6299629620056C3AC /* GoogleMobileAds */,
+				ED446AE6299633100056C3AC /* OpenAIKit */,
 			);
 			productName = "AI Legend";
 			productReference = ED446AC4299627500056C3AC /* AI Legend.app */;
@@ -123,6 +160,7 @@
 			mainGroup = ED446ABB299627500056C3AC;
 			packageReferences = (
 				ED446AD5299629620056C3AC /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				ED446AE5299633100056C3AC /* XCRemoteSwiftPackageReference "OpenAIKit" */,
 			);
 			productRefGroup = ED446AC5299627500056C3AC /* Products */;
 			projectDirPath = "";
@@ -150,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED446AE9299633700056C3AC /* CustomAlbum.swift in Sources */,
 				ED446ACA299627500056C3AC /* ContentView.swift in Sources */,
 				ED446ADA29962AB30056C3AC /* BannerAd.swift in Sources */,
+				ED446AE4299632E60056C3AC /* OpenVM.swift in Sources */,
+				ED446AE0299632400056C3AC /* Home.swift in Sources */,
 				ED446AC8299627500056C3AC /* AI_LegendApp.swift in Sources */,
+				ED446AE22996327B0056C3AC /* ActivityIndicator.swift in Sources */,
+				ED446AEB299633850056C3AC /* Error.swift in Sources */,
+				ED446ADE299632180056C3AC /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +411,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		ED446AE5299633100056C3AC /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -374,6 +426,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = ED446AD5299629620056C3AC /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
 			productName = GoogleMobileAds;
+		};
+		ED446AE6299633100056C3AC /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED446AE5299633100056C3AC /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -16,7 +16,7 @@ struct AI_LegendApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
         }
     }
 }

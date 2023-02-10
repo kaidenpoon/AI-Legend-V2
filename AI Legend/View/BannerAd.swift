@@ -9,6 +9,7 @@ import SwiftUI
 import GoogleMobileAds
 
 struct BannerAd:UIViewRepresentable{
+    let screenSize = UIScreen.main.bounds.size
     var unitID:String
     
     func makeCoordinator() -> Coordinator {
@@ -16,9 +17,11 @@ struct BannerAd:UIViewRepresentable{
     }
     
     func makeUIView(context: Context) -> GADBannerView {
+//        let adSize = GADAdSizeFromCGSize(CGSize(width: screenSize.width, height: 50))
         let adView = GADBannerView(adSize: GADAdSizeBanner)
         adView.adUnitID = unitID
         adView.rootViewController = UIApplication.shared.getRootViewController()
+        adView.delegate = context.coordinator
         adView.load(GADRequest())
         return adView
     }
